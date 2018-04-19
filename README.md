@@ -12,6 +12,6 @@
 
 1. 将项目克隆到本地
 2. 命令行运行 `npm install` 或者 `yarn`
-3. 命令行运行 `npm start` 或者 `start`
+3. 命令行运行 `npm run start` 或者 `yarn start`
 4. 打开 `http://localhost:8000/`
 5. 愉快地开发吧
