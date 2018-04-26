@@ -1,0 +1,40 @@
+.multi-select-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 480px;
+  padding: 20px;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  
+  .left-selects, .right-selects {
+    float: left;
+    width: 170px;
+    height: 200px;
+    select {
+      width: 170px;
+      height: 200px;
+      overflow-y: auto;
+      font-size: 12px;
+      color: #666;
+      outline: none;
+    }
+    option {
+      padding: 3px 0;
+    }
+  }
+  
+  .middle-controllers {
+    float: left;
+    width: 140px;
+    text-align: center;
+  }
+  .confirm-selects {
+    padding-top: 20px;
+    text-align: center;
+    clear: both;
+  }
+}
