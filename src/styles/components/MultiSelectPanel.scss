@@ -10,6 +10,11 @@
   border-radius: 6px;
   overflow: hidden;
   
+  button{
+    display: block;
+    margin: 20px auto;
+  }
+
   .left-selects, .right-selects {
     float: left;
     width: 170px;
@@ -36,5 +41,9 @@
     padding-top: 20px;
     text-align: center;
     clear: both;
+    button {
+      display: inline-block;
+      margin: 20px;
+    }
   }
 }
