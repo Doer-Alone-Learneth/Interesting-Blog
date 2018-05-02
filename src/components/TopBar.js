@@ -1,6 +1,4 @@
 import React from 'react';
-import _     from 'lodash';
-import cx    from 'classnames';
 
 require('styles/components/TopBar.scss')
 
@@ -10,7 +8,7 @@ class TopBar extends React.Component {
 
     this.state = {
       userIn: false,
-      userInfo: {} 
+      userInfo: {}
     }
   }
 

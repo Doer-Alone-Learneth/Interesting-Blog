@@ -1,7 +1,7 @@
 import React                                   from 'react';
 import MultiSelectPanel                        from './components/MultiSelectPanel';
-import { BrowserRouter as Router, Route, Link }from "react-router-dom";
-import Index                                 from './pages/Index';
+import { BrowserRouter as Router, Route, Link }from 'react-router-dom';
+import Index                                   from './pages/Index';
 
 require('normalize.css/normalize.css');
 require('styles/App.scss');
@@ -28,9 +28,6 @@ class AppComponent extends React.Component {
                 <Link to="/MultiSelectPanel">MultiSelectPanel组件</Link>
               </li>
             </ul>
-
-            <hr />
-
             <Route exact path="/" component={Index} />
             <Route exact path="/MultiSelectPanel" component={MultiSelectPanel} />
           </div>
