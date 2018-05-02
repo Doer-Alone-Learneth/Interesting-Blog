@@ -1,0 +1,39 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 1px solid #e8e8e8;
+  background: #fff;
+  color: #333;
+  padding: 0 3%;
+  border-top: 1px solid #000; //调试用，记得删除
+
+  .logo {
+    font-size: 24px;
+  }
+  
+  .navs {
+    display: flex;
+  }
+
+  .nav {
+    display: flex;
+    li {
+      height: 38px;
+      line-height: 38px;
+      list-style: none;
+      opacity: 0.8;
+      padding: 0 12px;
+      cursor: pointer;
+    }
+  }
+
+  .controls {
+    align-self: flex-end;
+
+    a {
+      margin: 0 12px;
+    }
+  }
+}

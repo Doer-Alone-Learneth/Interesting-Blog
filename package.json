@@ -67,6 +67,8 @@
     "normalize.css": "^4.0.0",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "sass-loader": "^7.0.1"
   }
 }

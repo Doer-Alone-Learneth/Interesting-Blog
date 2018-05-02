@@ -1,19 +1,40 @@
+import React                                   from 'react';
+import MultiSelectPanel                        from './components/MultiSelectPanel';
+import { BrowserRouter as Router, Route, Link }from "react-router-dom";
+import Index                                 from './pages/Index';
+
 require('normalize.css/normalize.css');
-require('styles/App.css');
-
-import React            from 'react';
-import MultiSelectPanel from './components/MultiSelectPanel';
-
-let yeomanImage = require('./images/yeoman.png');
+require('styles/App.scss');
 
 class AppComponent extends React.Component {
   render() {
     return (
       <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
-        <h1>上面是自动生成的内容，下面是组件</h1>
-        <MultiSelectPanel />
+        <h1>一群大白菜的博客系统</h1>
+        <h2>react路由</h2>
+        <Router>
+          <div>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/topics">Topics</Link>
+              </li>
+              <li>
+                <Link to="/MultiSelectPanel">MultiSelectPanel组件</Link>
+              </li>
+            </ul>
+
+            <hr />
+
+            <Route exact path="/" component={Index} />
+            <Route exact path="/MultiSelectPanel" component={MultiSelectPanel} />
+          </div>
+        </Router>
       </div>
     );
   }

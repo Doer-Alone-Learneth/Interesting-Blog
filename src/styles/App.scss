@@ -1,0 +1,23 @@
+body {
+  font-family: "Helvetica Neue","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
+}
+
+a {
+  transition: all 0.3s;
+}
+
+.btn-type-1 {
+  display: inline-block;
+  width: auto;
+  padding: 0 15px;
+  line-height: 28px;
+  border: 1px solid #38bef0;
+  border-radius: 3px;
+  color: #40a3da;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    border-color: #40a3da;
+    background: #40a3da;
+  }
+}
